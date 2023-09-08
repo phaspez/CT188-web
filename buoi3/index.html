@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+        <h1>Đăng ký tài khoản</h1>
+        <p>Vui lòng điền các thông tin sau</p>
+        <form method="post" action=''>
+        <fieldset class="mb-3">
+            <div class="input-group-control">
+            <label class="form-label" for="first-name">Họ và Tên: 
+                <input class="form-control" id="first-name" name="first-name" type="text" required />
+            </label>
+            <label class="form-label" for="email">Email: 
+                <input class="form-control" id="email" name="email" type="email" required />
+            </label>
+            </div>
+        </fieldset>
+        
+            <label class="form-label" for="new-password">Tạo mật khẩu: 
+                <input class="form-control" id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required />
+            </label>
+            <label class="form-label" for="new-password-again">Nhập lại mật khẩu của bạn: 
+                <input class="form-control" id="new-password-again" name="new-password" type="password" pattern="[a-z0-5]{8,}" required />
+            </label>
+        
+        <fieldset class="mb-3">
+            <label class="form-label px-2" for="male">
+                <input class="form-check-input" id="male" type="radio" name="gender" class="inline" required /> Nam
+            </label>
+            <label class="form-label px-2" for="female">
+                <input class="form-check-input" id="female" type="radio" name="gender" class="inline" required /> Nữ
+            </label>
+            <label class="form-label px-2" for="terms-and-conditions">
+            <input class="form-check-input" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Tôi chấm nhận <a href="#">điều khoản sử dụng</a>
+            </label>
+        </fieldset>
+        <fieldset class="mb-3">
+            <div class="container">
+                <label class="form-label" for="profile-picture">Tải lên ảnh đại diện: 
+                    <input class="form-control" id="profile-picture" type="file" name="file" required />
+                </label>
+                <label class="form-label" for="age">Nhập tuổi của bạn: 
+                    <input class="form-control" id="age" type="number" name="age" min="13" max="120" required/>
+                </label>
+            </div>
+            <label class="form-select-label" for="referrer">Bạn biết về chúng tôi qua những kênh nào?
+            <select class="form-select"  id="referrer" name="referrer">
+                <option value="">(chọn một)</option>
+                <option value="1">Báo chí</option>
+                <option value="2">Thời sự</option>
+                <option value="3">Bạn bè, người thân</option>
+                <option value="4">Các trang mạng xã hội</option>
+            </select>
+            </label>
+            <div class="container">
+                <label class="form-label" for="bio">Tiểu sử về bạn:
+                <textarea class="form-control" id="bio" name="bio" rows="3" cols="30" placeholder="Tôi thích đọc sách..."></textarea>
+                </label>
+            </div>
+        </fieldset>
+        <input class="btn btn-primary" type="submit" value="Đăng ký ngay!" />
+        </form>
+    </div>
+  </body>
+</html>

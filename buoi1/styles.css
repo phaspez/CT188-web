@@ -1,0 +1,23 @@
+:root {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: #3F1D38;
+    color: #E19898;
+    text-align: center;
+}
+
+.btn {
+    background-color: #A2678A;
+    color: white;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #E19898;
+}
+
+.btn:active {
+    background-color: #4D3C77;
+}
